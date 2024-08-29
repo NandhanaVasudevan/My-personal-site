@@ -348,7 +348,7 @@ body {
       padding: 10px 20px;
   }
   #header h1 {
-    font-size: 50px;
+    font-size: 20px;
     color: #f8b400;
     margin: 0;
     line-height: 1;
@@ -358,7 +358,7 @@ body {
   }
   
   #header h2 {
-    font-size: 20px;
+    font-size: 10px;
     margin-top: 10px;
     color: #ffffff;
     opacity: 0.9;
@@ -378,8 +378,8 @@ body {
     background: #f8b400;
     color: #000;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,7 +405,7 @@ body {
   .bg-image{
     height: 70vh;
     background-size: cover;
-    width: 483px;
+    
   }
 
   .text-white {
