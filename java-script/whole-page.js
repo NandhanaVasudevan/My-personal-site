@@ -173,7 +173,7 @@ window.addEventListener('load', () => {
           document.body.style.overflow = 'auto'; // Re-enable scrolling
       }, 3590); // 3590 milliseconds = 6 seconds
 
-  }, 3000); // 3000 milliseconds = 3 seconds (or adjust as needed)
+  }, 3600); // 3000 milliseconds = 3 seconds (or adjust as needed)
 });
 
 //skills-coins
