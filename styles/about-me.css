@@ -134,7 +134,7 @@
 
 @media(max-width:768px) {
   .about-image img {
-      max-width: 100px;
+      max-width: 200px;
       border-radius: 10px;
   }
   .about-me {
