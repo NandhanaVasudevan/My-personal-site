@@ -340,7 +340,7 @@
   }
   .colourful {
     position: relative;
-    
+    display: grid;
       grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */
       gap: 20px;
       
