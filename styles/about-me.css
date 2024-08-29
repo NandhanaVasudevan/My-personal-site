@@ -1,147 +1,143 @@
-.about-me{
-    font-family: Arial, sans-serif;
-    background-color: #FFF078;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    
-
- 
+.about-me {
+  font-family: Arial, sans-serif;
+  background-color: #FFF078;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
- #about-me{
 
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background: black;
-        background-image: url('https://www.transparenttextures.com/patterns/gplay.png');
-       
-        padding: 0 20px;
-      }
+#about-me {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: black;
+  background-image: url('https://www.transparenttextures.com/patterns/gplay.png');
+  padding: 0 20px;
+}
 
-  .trigger {
-    text-align: center;
-    padding: 20px;
-    
-    cursor: pointer;
-  }
-  
-  .trigger h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #f8b400;
-  }
-  
-  .about-me {
-    width: 100%;
-    max-width: 1200px;
-    height: 90vh; /* Allow space for scrolling */
-    background: rgba(0, 0, 0, 0.85);
-    padding: 40px;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    box-sizing: border-box;
-    color: white;
-    position: fixed;
-    top: -100vh; /* Start position off-screen */
-    left: 50%;
-    transform: translateX(-50%);
-    background-image:url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    transition: top 0.5s ease-in-out;
-    z-index: 9999;
-    overflow-y: auto; /* Enable vertical scrolling */
-  }
-  
-  .about {
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  .about-image {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
+.trigger {
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.trigger h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #f8b400;
+}
+
+.about-me {
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh; /* Allow space for scrolling */
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+  position: fixed;
+  top: -100vh; /* Start position off-screen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  transition: top 0.5s ease-in-out;
+  z-index: 9999;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.about {
+  display: flex;
+  flex-direction: column; /* Change direction to column */
+  align-items: center;
+}
+
+.about-image {
+  margin-bottom: 20px; /* Add space between image and text */
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-content {
+  text-align: center; /* Center the text content */
+}
+
+.about-content h2 {
+  font-size: 32px;
+  color: #f8b400;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the list items */
+}
+
+.about-content ul li i {
+  margin-right: 10px;
+  color: #f8b400;
+}
+
+.about-content p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Skills Section */
+.skills {
+  margin-top: 20px;
+}
+
+.skills h2 {
+  font-size: 28px;
+  color: #f8b400;
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background-color: #333;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-percentage {
+  background-color: #f8b400;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media(max-width:768px) {
   .about-image img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .about-content {
-    flex: 2;
-  }
-  
-  .about-content h2 {
-    font-size: 32px;
-    color: #f8b400;
-    margin-bottom: 20px;
-  }
-  
-  .about-content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about-content ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .about-content ul li i {
-    margin-right: 10px;
-    color: #f8b400;
-  }
-  
-  .about-content p {
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-  /* Skills Section */
-  .skills {
-    margin-top: 20px;
-  }
-  
-  .skills h2 {
-    font-size: 28px;
-    color: #f8b400;
-    margin-bottom: 20px;
-  }
-  
-  .skill {
-    margin-bottom: 20px;
-  }
-  
-  .skill-name {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .skill-bar {
-    background-color: #333;
-    height: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .skill-percentage {
-    background-color: #f8b400;
-    height: 100%;
-    border-radius: 5px;
-  }
-  @media(max-width:768px){
-    .about-image img {
       max-width: 100px;
       border-radius: 10px;
-    }
-    .about-me {
+  }
+  .about-me {
       width: 100%;
       max-width: 800px;
       height: 70vh; /* Allow space for scrolling */
@@ -155,67 +151,45 @@
       top: -100vh; /* Start position off-screen */
       left: 50%;
       transform: translateX(-50%);
-      background-image:url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+      background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
       transition: top 0.5s ease-in-out;
       z-index: 9999;
       overflow-y: auto; /* Enable vertical scrolling */
-    }
-    .about-content {
-      flex: 4;
-    }
-    
-    .about-content h2 {
+  }
+  .about-content {
+      text-align: center;
+  }
+  .about-content h2 {
       font-size: 27px;
       color: #f8b400;
       margin-bottom: 15px;
-    }
-    
-    .about-content ul {
+  }
+  .about-content ul {
       list-style: none;
       padding: 0;
-    }
-    
-    .about-content ul li {
+  }
+  .about-content ul li {
       font-size: 14px;
       margin-bottom: 8px;
       display: flex;
       align-items: center;
-    }
-    
-    .about-content ul li i {
+      justify-content: center; /* Center align the list items */
+  }
+  .about-content ul li i {
       margin-right: 6px;
       color: #f8b400;
-    }
-    
-    .about-content p {
+  }
+  .about-content p {
       font-size: 15px;
       margin-top: 10px;
-    }
-    
   }
-
-
-
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Tablets and Small Desktops */
-
-
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
