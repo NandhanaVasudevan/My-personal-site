@@ -213,3 +213,13 @@ var palnet=$('.planet');
 
 
 
+document.querySelector('.crome').addEventListener('click', function() {
+    var planet = document.querySelector('#planet');
+    
+    // Check the current display style and toggle it
+    if (planet.style.display === 'none') {
+        planet.style.display = 'block'; // Show the planet again
+    } else {
+        planet.style.display = 'none'; // Hide the planet
+    }
+});
