@@ -168,7 +168,8 @@ window.addEventListener('load', () => {
           document.getElementById('context').classList.add('visible');
           document.getElementById('cool').classList.add('visible');
           document.getElementById('plate').classList.add('visible');
-          
+          document.getElementById('form-container').classList.add('visible');
+          document.getElementById('backtop').classList.add('visible');
           document.getElementById('effect').classList.add('visible');
           document.body.style.overflow = 'auto'; // Re-enable scrolling
       }, 3590); // 3590 milliseconds = 6 seconds
