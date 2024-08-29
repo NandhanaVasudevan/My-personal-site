@@ -1,0 +1,177 @@
+/* Media Queries for Responsiveness */
+
+/* For devices with a max-width of 768px */
+@media (max-width: 768px) {
+    button {
+      padding: 8px 20px;
+      font-size: 15px;
+      margin: 10px;
+    }
+  
+    .star {
+      width: 10px;
+    }
+  
+    .star-1 {
+      top: 15%;
+      left: 15%;
+    }
+  
+    .star-2 {
+      top: 40%;
+      left: 40%;
+    }
+  
+    .star-3 {
+      top: 35%;
+      left: 35%;
+    }
+  
+    .star-4 {
+      top: 15%;
+      left: 35%;
+    }
+  
+    .star-5 {
+      top: 20%;
+      left: 40%;
+    }
+  
+    .star-6 {
+      top: 0%;
+      left: 45%;
+    }
+  
+    #header h1 {
+      font-size: 50px;
+      letter-spacing: 2px;
+    }
+  
+    #header h2 {
+      font-size: 28px;
+    }
+  
+    .social-links a {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+  
+    .resume-content {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .resume-pane {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    section.section-show {
+      top: 80px;
+      padding-bottom: 30px;
+    }
+  }
+  
+  /* For devices with a max-width of 480px */
+  @media (max-width: 480px) {
+    button {
+      padding: 5px 15px;
+      font-size: 13px;
+      margin: 5px;
+    }
+  
+    .star {
+      width: 7px;
+    }
+  
+    .star-1,
+    .star-2,
+    .star-3,
+    .star-4,
+    .star-5,
+    .star-6 {
+      top: auto;
+      left: auto;
+    }
+  
+    #header h1 {
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+  
+    #header h2 {
+      font-size: 22px;
+    }
+  
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    .resume-pane {
+      padding: 10px;
+    }
+  
+    section.section-show {
+      top: 60px;
+      padding-bottom: 20px;
+    }
+  }
+  
+
+  /* For devices with a max-width of 320px */
+@media (max-width: 320px) {
+    button {
+      padding: 4px 10px;
+      font-size: 11px;
+      margin: 3px;
+    }
+  
+    .star {
+      width: 5px;
+    }
+  
+    .star-1,
+    .star-2,
+    .star-3,
+    .star-4,
+    .star-5,
+    .star-6 {
+      top: auto;
+      left: auto;
+    }
+  
+    #header h1 {
+      font-size: 30px;
+      letter-spacing: 0;
+    }
+  
+    #header h2 {
+      font-size: 18px;
+    }
+  
+    .social-links a {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .resume-content {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .resume-pane {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    section.section-show {
+      top: 40px;
+      padding-bottom: 15px;
+    }
+  }
+  

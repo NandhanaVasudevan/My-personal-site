@@ -1,0 +1,325 @@
+
+.portfolio-section {
+  
+    padding: 50px;
+}
+
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-info {
+    text-align: center;
+}
+
+.portfolio-info h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.details-link {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.details-link:hover {
+    color: #0f0;
+}
+
+/* Modal Styling */
+.portfolio-details-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    background-image:url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.lala {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    background-image:url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.details-left img {
+    max-width: 400px;
+    margin-left: 90px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+.details-right {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+.trigger {
+    text-align: center;
+    padding: 20px;
+    
+    cursor: pointer;
+  }
+  .portfolios {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#portfolios {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+    padding: 0 20px;
+}
+
+/* Section Styling */
+#screen {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100%; /* Initially off-screen */
+    
+    color: #fff;
+    padding: 50px 0;
+    border-radius: 8px 8px 0 0;
+    transition: bottom 0.5s ease-in-out;
+  
+
+
+    width: 100%;
+    max-width: 1200px;
+    height: 600px; /* Allow space for scrolling */
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+    
+    
+    transform: translateY(50%);
+
+    
+    z-index: 9999;
+    overflow-x: auto; /* Enable vertical scrolling */
+}
+
+/* Section visible state */
+#screen.open {
+    bottom: 50%; /* Slide into view */
+    left: 70px;
+    right: 70px;
+    background-image:url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+.close-screen {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+/* Default Styles (as you provided) */
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media (max-width: 600px) {
+    /* Portfolio item adjustments */
+    .portfolio-item {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+
+    /* Image adjustments in modal */
+    .details-left img {
+        max-width: 100%; /* Image takes full width */
+        margin-left: 0; /* No left margin */
+        margin-bottom: 20px; /* Space below the image */
+        margin-top: 20px; /* Space above the image */
+    }
+
+    /* Text alignment adjustments in modal */
+    .details-right {
+        margin-left: 0; /* No left margin */
+        margin-top: 20px; /* Space above the text */
+        text-align: center; /* Center the text */
+    }
+
+    /* Modal content adjustments */
+    .lala {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Automatic height adjustment */
+        padding: 10px; /* Reduce padding for better fit */
+    }
+
+    /* Adjust the carousel height */
+    .carousel-item {
+        height: auto; /* Automatic height based on content */
+    }
+
+    /* Portfolio details modal adjustments */
+    .portfolio-details-modal {
+        padding: 20px; /* Add padding for better content spacing */
+    }
+
+    /* Section visible state adjustments */
+    #screen.open {
+        bottom: 0; /* Fully visible on screen */
+        left: 5%; /* Margins on the sides */
+        right: 5%;
+        width: 90%; /* Adjust width to fit within margins */
+        height: 100%; /* Automatic height adjustment */
+        transform: none; /* No transform, fully visible */
+    }
+
+    /* Adjust the close button position */
+    .close-button {
+        top: 10px; /* Closer to the top */
+        right: 10px; /* Closer to the right edge */
+        font-size: 24px; /* Slightly smaller for mobile */
+    }
+
+    
+
+    /* General font adjustments for better readability */
+    .portfolio-info h2,
+    .portfolio-info p,
+    .details-link {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* Medium devices (portrait tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .portfolio-item {
+        width: 45%;
+        height: auto;
+    }
+
+    .details-left img {
+        max-width: 300px;
+        margin-left: 0;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .details-right {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .lala {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #screen.open {
+        bottom: 10%;
+        left: 5%;
+        right: 5%;
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 901px) {
+    .portfolio-item {
+        width: 300px;
+        height: 300px;
+    }
+
+    .lala {
+        flex-direction: row;
+        height: 500px;
+        padding: 20px;
+    }
+
+    #screen.open {
+        bottom: 50%;
+        left: 70px;
+        right: 70px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) {
+    .portfolio-item {
+        width: 300px;
+        height: 300px;
+    }
+
+    .lala {
+        flex-direction: row;
+        height: 500px;
+        padding: 20px;
+    }
+
+    #screen.open {
+        bottom: 50%;
+        left: 100px;
+        right: 100px;
+    }
+}

@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.hello-popup {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.hello-text {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease
+}
+
+.hello-text.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+

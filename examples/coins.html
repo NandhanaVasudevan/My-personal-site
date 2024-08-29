@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinning Coins</title>
+  <style>
+    .coin-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px; /* Adjust gap between rows */
+      position: relative;
+      height: 100vh; /* Full viewport height */
+    }
+
+    .coin-row {
+      display: flex;
+      justify-content: center;
+      gap: 150px; /* Adjust gap between coins */
+    }
+
+    .coin {
+      font-size: 150px;
+      width: 0.1em;
+      height: 1em;
+      background: black;
+      margin: auto;
+      position: relative;
+      animation: rotate_4001510 7s infinite linear;
+      transform-style: preserve-3d;
+
+    }
+
+    
+
+    .coin .side,
+    .coin:before,
+    .coin:after {
+      content: "";
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      border-radius: 50%;
+      right: -0.4em;
+      text-align: center;
+      line-height: 1;
+      transform: rotateY(-90deg);
+      -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    }
+
+    .coin .tails,
+    .coin:after {
+      left: -0.4em;
+      transform: rotateY(90deg);
+    }
+
+    .coin:before,
+    .coin:after {
+        background: black;
+      backface-visibility: hidden;
+      transform: rotateY(90deg);
+    }
+
+    .coin:after {
+            transform: rotateY(-90deg);
+        }
+
+        @keyframes rotate_4001510 {
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+   
+  </style>
+</head>
+<body>
+  <div class="coin-container">
+    <div class="coin-row">
+      <div class="coin">
+        <div class="side heads">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+        <div class="side tails">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+      </div>
+
+      <!-- Repeat the above coin block to create more coins in the same row -->
+      
+      <div class="coin">
+        <div class="side heads">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+        <div class="side tails">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+      </div>
+      <div class="coin">
+        <div class="side heads">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+        <div class="side tails">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+      </div>
+    </div>
+
+    <div class="coin-row">
+      <div class="coin">
+        <div class="side heads">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+        <div class="side tails">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+      </div>
+      <div class="coin">
+        <div class="side heads">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+        <div class="side tails">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+      </div>
+      <div class="coin">
+        <div class="side heads">
+            <img alt="Html5 icon" loading="lazy" decoding="async" src="https://cdn-icons-png.freepik.com/256/13170/13170709.png?ga=GA1.1.1251932752.1722927887&amp;semt=ais_hybrid" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent">
+        </div>
+        <div class="side tails">
+          <!-- Tails SVG -->
+        </div>
+      </div>
+    </div>
+
+    <div class="coin-row">
+      <div class="coin">
+        <div class="side heads">
+          <!-- Heads SVG -->
+        </div>
+        <div class="side tails">
+          <!-- Tails SVG -->
+        </div>
+      </div>
+      <div class="coin">
+        <div class="side heads">
+          <!-- Heads SVG -->
+        </div>
+        <div class="side tails">
+          <!-- Tails SVG -->
+        </div>
+      </div>
+      <div class="coin">
+        <div class="side heads">
+          <!-- Heads SVG -->
+        </div>
+        <div class="side tails">
+          <!-- Tails SVG -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

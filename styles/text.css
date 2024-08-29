@@ -1,0 +1,108 @@
+/* Resume Section Styling */
+#resume {
+  width: 100%; /* Increased width for more content */
+  max-width: 1200px; /* Max width similar to reference */
+  height: 500px; /* Full-height for more space */
+  position: fixed;
+  top: 5%; /* Adjusted position */
+  left: -100%;
+  background: black;
+  
+  background-image:url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  z-index: 2;
+  transition: left 0.5s ease-in-out;
+  /* Spacious padding */
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-x: auto; /* Explicitly enable horizontal scrolling */
+  overflow-y: auto; /* Explicitly enable vertical scrolling */
+  resize: both; /* Allow resizing both horizontally and vertically */
+  min-width: 300px; /* Minimum width for resizing */
+  min-height: 300px; /* Minimum height for resizing */
+  height: 600px;
+}
+
+/* Scrollbar Styling */
+#resume::-webkit-scrollbar {
+  width: 20px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+#resume::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
+
+#resume::-webkit-scrollbar-thumb {
+  background: #000; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+}
+
+#resume::-webkit-scrollbar-thumb:hover {
+  background: #333; /* Darker color on hover */
+}
+
+/* Section Title Styling */
+.resume .section-title h2 {
+  font-size: 32px; /* Reduced font size */
+  color: #f8b400; /* Yellow color for contrast */
+  margin-bottom: 15px; /* Reduced margin */
+  text-align: left;
+}
+
+/* Resume Item Styling */
+.resume .resume-item {
+  padding: 15px; /* Reduced padding for smaller content box */
+  margin-bottom: 20px; /* Reduced space between items */
+  border-left: 3px solid rgba(255, 255, 255, 0.3); /* Border for section separation */
+  width: 100%;
+}
+
+.resume .resume-item h4 {
+  font-size: 20px; /* Reduced font size */
+  font-weight: 700;
+  color: #f8b400; /* Yellow for headings */
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.resume .resume-item p, .resume .resume-item ul {
+  font-size: 14px; /* Reduced font size */
+  color: #ffffff; /* White text for readability */
+}
+
+.resume .resume-item ul li {
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #resume {
+    width: 95%;
+   
+    padding: 50px; /* Reduced padding for smaller screens */
+  }
+  .resume-pane {
+    width: 100%; /* Adjust for smaller screens */
+}
+
+  .resume .section-title h2 {
+    font-size: 24px;
+  }
+
+  .resume .resume-item {
+    width: auto; /* Adjust width for smaller screens */
+  }
+
+  .resume .resume-item h4 {
+    font-size: 18px;
+  }
+
+  .resume .resume-item p, .resume .resume-item ul {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+    .resume .resume-item {
+        padding: 10px;
+    }
+}
