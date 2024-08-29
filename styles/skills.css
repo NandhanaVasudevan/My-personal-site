@@ -188,7 +188,7 @@
    
 }
 .crome {
-background-color: white;
+background-color:black;
 margin: 0;
 color: #212121;
 transition: background-color 1s cubic-bezier(0.46,0.03,0.52,0.96);
@@ -490,7 +490,7 @@ height: 600px;
            
         }
         .crome {
-        background-color: white;
+        background-color:black;
         margin: 0;
         color: #212121;
         transition: background-color 1s cubic-bezier(0.46,0.03,0.52,0.96);

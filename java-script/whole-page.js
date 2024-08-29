@@ -185,7 +185,7 @@ $(function () {
   var scanPhotoWrap = $('.scan-Photo-wrap');
   var copywrap = $('.copy-wrap');
   var Photo = $('.Photo');
- 
+var palnet=$('.planet');
   var name = $('.name');
   var coincot = $('.coin-cot'); // Target the coin cot
 
