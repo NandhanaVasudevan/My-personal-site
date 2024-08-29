@@ -238,7 +238,7 @@
     align-items: center;
     transition: 0.5s;
     border-radius: 10px;
-    margin: -20px -20px;
+    margin: 0 -30px;
     backdrop-filter: blur(10px);
     transform: rotate(calc(var(--r) * 1deg));
   }
@@ -270,9 +270,9 @@
 
 @media(max-width:768px){
   .e-card {
-    margin: 30px 30px;
+    margin: 10px 10px;
     background: transparent;
-    box-shadow: 0px 5px 25px -5.5px rgba(0,0,0,0.45);
+    
     position: relative;
     width: 140px;
     height: 230px;
@@ -364,7 +364,7 @@
     align-items: center;
     transition: 0.5s;
     border-radius: 5px;
-    margin: 0 0;
+    margin: auto auto;
     backdrop-filter: blur(5px);
     transform: rotate(calc(var(--r) * 1deg));
   }
@@ -407,7 +407,7 @@
 
 @media(max-width:490px) and (min-width:400){
   .e-card {
-    margin: 60px auto;
+    margin: 30px 30px;
     background: transparent;
     box-shadow: 0px 3px 23px -3.5px rgba(0,0,0,0.45);
     position: relative;
