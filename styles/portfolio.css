@@ -52,13 +52,13 @@
     margin: 0;
 }
 
-.details-link {
+.details-link,.details-tic {
     font-size: 24px;
     text-decoration: none;
     color: #fff;
 }
 
-.details-link:hover {
+.details-link:hover, .details-tic:hover {
     color: #0f0;
 }
 
@@ -98,7 +98,7 @@
     margin-top: 50px;
 }
 
-.close-button {
+.close-button, .close-tic {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -186,24 +186,31 @@
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media (max-width: 600px) {
     /* Portfolio item adjustments */
+
+    .para{
+        font-size: 15px;
+    }
+    .para-design{
+        margin-bottom: 0px;
+    }
     .portfolio-item {
         width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
-        margin-bottom: 20px; /* Add spacing between items */
+        margin-bottom: 0px; /* Add spacing between items */
     }
 
     /* Image adjustments in modal */
     .details-left img {
         max-width: 100%; /* Image takes full width */
         margin-left: 0; /* No left margin */
-        margin-bottom: 20px; /* Space below the image */
+        margin-bottom: 10px; /* Space below the image */
         margin-top: 20px; /* Space above the image */
     }
 
     /* Text alignment adjustments in modal */
     .details-right {
         margin-left: 0; /* No left margin */
-        margin-top: 20px; /* Space above the text */
+        margin-top: 10px; /* Space above the text */
         text-align: center; /* Center the text */
     }
 
@@ -235,7 +242,7 @@
     }
 
     /* Adjust the close button position */
-    .close-button {
+    .close-button, .close-tic {
         top: 10px; /* Closer to the top */
         right: 10px; /* Closer to the right edge */
         font-size: 24px; /* Slightly smaller for mobile */
@@ -246,14 +253,25 @@
     /* General font adjustments for better readability */
     .portfolio-info h2,
     .portfolio-info p,
-    .details-link {
+    .details-link, .details-tic{
         font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .details-link,.details-tic {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
     }
 }
 
 
 /* Medium devices (portrait tablets, 600px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
+    .para{
+        font-size: 15px;
+    }
+    .para-design{
+        margin-bottom: 0px;
+    }
     .portfolio-item {
         width: 45%;
         height: auto;
@@ -282,6 +300,26 @@
         left: 5%;
         right: 5%;
     }
+
+    .close-button, .close-tic {
+        top: 10px; /* Closer to the top */
+        right: 10px; /* Closer to the right edge */
+        font-size: 24px; /* Slightly smaller for mobile */
+    }
+
+    
+
+    /* General font adjustments for better readability */
+    .portfolio-info h2,
+    .portfolio-info p,
+    .details-link, .details-tic{
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .details-link,.details-tic {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 /* Large devices (desktops, 900px and up) */
@@ -302,6 +340,25 @@
         left: 70px;
         right: 70px;
     }
+    .close-button, .close-tic {
+        top: 10px; /* Closer to the top */
+        right: 10px; /* Closer to the right edge */
+        font-size: 24px; /* Slightly smaller for mobile */
+    }
+
+    
+
+    /* General font adjustments for better readability */
+    .portfolio-info h2,
+    .portfolio-info p,
+    .details-link, .details-tic{
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .details-link,.details-tic {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -321,5 +378,24 @@
         bottom: 50%;
         left: 100px;
         right: 100px;
+    }
+    .close-button, .close-tic {
+        top: 10px; /* Closer to the top */
+        right: 10px; /* Closer to the right edge */
+        font-size: 24px; /* Slightly smaller for mobile */
+    }
+
+    
+
+    /* General font adjustments for better readability */
+    .portfolio-info h2,
+    .portfolio-info p,
+    .details-link, .details-tic{
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .details-link,.details-tic {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
     }
 }

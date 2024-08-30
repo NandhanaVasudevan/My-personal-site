@@ -690,7 +690,7 @@
   
 </section>
 
-  <section id="screen" class="portfolio-section">
+<section id="screen" class="portfolio-section">
     
       <div style="font-size: 50px;color: #f8b400;
       margin-bottom: 20px;
@@ -698,7 +698,7 @@
      
       display: inline-block;">
 
-<span class="close-screen">&times;</span>
+  <span class="close-screen">&times;</span>
           <h1>PROJECTS</h1>
       </div>
       
@@ -716,12 +716,12 @@
 
           <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="yas-selfie.jpg" alt="App 1">
+                <img src="images/tic-tac-toe.png" alt="App 1">
                 <div class="overlay">
                     <div class="portfolio-info">
-                        <h2>App 1</h2>
-                        <p>APP</p>
-                        <a href="#portfolio-details" class="details-link">+</a>
+                        <h2>Radiant-Riddle</h2>
+                        <p>Website</p>
+                        <a href="#mass" class="details-tic">+</a>
                     </div>
                 </div>
             </div>
@@ -732,7 +732,7 @@
                       <div class="portfolio-info">
                           <h2>App 1</h2>
                           <p>APP</p>
-                          <a href="#portfolio-details" class="details-link">+</a>
+                          <a href="" class="details-link">+</a>
                       </div>
                   </div>
               </div>
@@ -743,15 +743,17 @@
   <!-- Portfolio Details Modal -->
   <div id="portfolio-details" class="portfolio-details-modal">
       
-          <span class="close-button">&times;</span>
+        <span class="close-button">&times;
+
+        </span>
           <main class="container">
 
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="margin-top: 90px;padding-top: 90px;margin-bottom: 70px; ">
+            <div id="myCarousel1" class="carousel slide mb-6" data-bs-ride="carousel" style="margin-top: 90px;padding-top: 90px;margin-bottom: 70px; ">
               <div class="carousel-indicators" >
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+                <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active" style="height: 512px;" >
@@ -762,11 +764,10 @@
                         <img src="images/phonebook1.png" alt="Portfolio Details">
                     </div>
                     <div class="details-right" style="color: white;">
-                      <h2 style="text-align: center;margin-bottom: 40px;">PhoneBook</h2>
-                        <p><strong>Category:</strong> Web design</p>
-                        <p> A church community belonging to St.Mary's orthodox church need a address/phone book so that they can socialize and make easy for them to connect with their church people </p>
-                        <p><strong>The website was hosted on Aug 11 through vercel app</strong> </p>
-                        <p><strong>Project URL:</strong> <a href="" target="_blank">Can't share the website link because of privacy issue. Backend is going on</a></p>
+                      <h2 style="text-align: center;margin-bottom: 5px;">PhoneBook</h2>
+                        
+                        <p class="para">St. Mary's Orthodox Church community is developing a dedicated address and phone book to enhance social connections among its members. This initiative aims to make it easier for church members to connect with one another, fostering a stronger sense of community. Hosted on a Vercel app since August 11, this website will serve as a vital resource for members, allowing them to reach out to each other effortlessly.</p>
+                       
                  
                     </div>
                 </div>
@@ -781,11 +782,7 @@
                     </div>
                     <div class="details-right" style="color: white;">
                        
-                        <p><strong>Category:</strong> Web design</p>
-                        <p><strong>Client:</strong> ASU Company</p>
-                        <p><strong>Project Date:</strong> 01 March, 2020</p>
-                        <p><strong>Project URL:</strong> <a href="http://www.example.com" target="_blank">www.example.com</a></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <p class="para">In addition to facilitating social interactions, the website will include a special feature that allows members to quickly find others in the community who share their blood type. This feature is designed to be particularly helpful in emergencies, providing an immediate network of potential donors within the church community.</p>
                     </div>
                 </div>
                   
@@ -798,11 +795,8 @@
                     </div>
                     <div class="details-right" style="color: white;">
                        
-                        <p><strong>Category:</strong> Web design</p>
-                        <p><strong>Client:</strong> ASU Company</p>
-                        <p><strong>Project Date:</strong> 01 March, 2020</p>
-                        <p><strong>Project URL:</strong> <a href="http://www.example.com" target="_blank">www.example.com</a></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                      <p class="para">As the backend development is ongoing, the project remains focused on ensuring that the final product is user-friendly, secure, and comprehensive, offering all the necessary tools for the members of St. Mary’s Orthodox Church to connect, support, and care for each other effectively.</p>
+
                     </div>
                 </div>
                   
@@ -821,18 +815,84 @@
                   
                 </div>
 
-              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-        </main>
-      </div>
+          </main>
+     
+     
+     
+        </div>
+ 
+   </div>
+     
+<div id="mass" class="portfolio-details-modal">
+      
+      <span class="close-tic">&times;</span>
+      <main class="container">
+  
+        <div id="myCarousel2" class="carousel slide mb-6" data-bs-ride="carousel" style="margin-top: 90px;padding-top: 90px;margin-bottom: 70px; ">
+          <div class="carousel-indicators" >
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+         
+          
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 512px;" >
+            
+                <div class="lala">
+                  
+            
+                <div class="details-right" style="color: white;">
+                  <h2 style="text-align: center;margin-bottom: 5px;">Functionally Dysfunctional Tic-Tac-Toe</h2>
+                    
+                    <p class="para">Our three-member team recently participated in the Lewis Hackathon. Tic-tac-toe is a famous game all over the world. But what happens when u play it on a damaged touchscreen/damaged keyboard? </p>
+                   
+             
+                </div>
+            </div>
+              
+            </div>
+            <div class="carousel-item" style="height: 512px;">
+             
+                <div class="lala">
+                
+            
+                <div class="details-right" style="color: white;">
+                   
+                   
+                  <p class="para"> The clicks don't go in the boxes u wanted!!! This is exactly what you will see here... A tic-tac-toe game where you are not sure which boxes will get filled!! After that you get to experience some of the code that goes behind generation of the game, finding out the missing words. Seems simple? There is a twist awaiting you!! If you have crossed that, voila!! Enjoy the corrected tic-tac-toe game!!! </p>
+                  <p class="para">Participating in the hackathon was an incredible experience for our team</p>
+                  <p class="para"><strong>Project URL:</strong> <a href="" target="_blank">https://raddiant-riddle.vercel.app/</a></p>
+                </div>
+            </div>
+              
+            </div>
+    
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </main>
   </div>
+</div>
+  
+
+ 
+
+
 </section>
 
 <div class="crome" id="plate">

@@ -97,6 +97,27 @@ document.querySelector('.close-button').addEventListener('click', function() {
     
 });
 
+
+
+document.querySelectorAll('.details-tic').forEach(link => {
+
+    
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#mass').style.display = 'flex';
+        
+
+        
+    });
+    
+});
+document.querySelector('.close-tic').addEventListener('click', function() {
+    document.querySelector('#mass').style.display = 'none';
+
+    
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Select the close button and the section to be closed
     const closeButton = document.querySelector('.close-screen');
