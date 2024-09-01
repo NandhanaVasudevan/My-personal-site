@@ -118,6 +118,28 @@ document.querySelector('.close-tic').addEventListener('click', function() {
 });
 
 
+
+
+document.querySelectorAll('.details-gru').forEach(link => {
+
+    
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#gru').style.display = 'flex';
+        
+
+        
+    });
+    
+});
+document.querySelector('.close-gru').addEventListener('click', function() {
+    document.querySelector('#gru').style.display = 'none';
+
+    
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // Select the close button and the section to be closed
     const closeButton = document.querySelector('.close-screen');

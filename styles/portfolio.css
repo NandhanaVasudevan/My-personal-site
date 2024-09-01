@@ -52,13 +52,13 @@
     margin: 0;
 }
 
-.details-link,.details-tic {
+.details-link,.details-, .details-gru {
     font-size: 24px;
     text-decoration: none;
     color: #fff;
 }
 
-.details-link:hover, .details-tic:hover {
+.details-link:hover, .details-tic:hover, .details-gru:hover {
     color: #0f0;
 }
 
@@ -98,7 +98,7 @@
     margin-top: 50px;
 }
 
-.close-button, .close-tic {
+.close-button, .close-tic, .close-gru {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -242,7 +242,7 @@
     }
 
     /* Adjust the close button position */
-    .close-button, .close-tic {
+    .close-button, .close-tic, .close-gru{
         top: 10px; /* Closer to the top */
         right: 10px; /* Closer to the right edge */
         font-size: 24px; /* Slightly smaller for mobile */
@@ -301,7 +301,7 @@
         right: 5%;
     }
 
-    .close-button, .close-tic {
+    .close-button, .close-tic, .close-gru {
         top: 10px; /* Closer to the top */
         right: 10px; /* Closer to the right edge */
         font-size: 24px; /* Slightly smaller for mobile */
@@ -312,10 +312,10 @@
     /* General font adjustments for better readability */
     .portfolio-info h2,
     .portfolio-info p,
-    .details-link, .details-tic{
+    .details-link, .details-tic, .details-gru{
         font-size: 18px; /* Adjust font size for smaller screens */
     }
-    .details-link,.details-tic {
+    .details-link,.details-tic, .details-gru {
         font-size: 24px;
         text-decoration: none;
         color: #fff;
@@ -340,7 +340,7 @@
         left: 70px;
         right: 70px;
     }
-    .close-button, .close-tic {
+    .close-button, .close-tic, .close-gru {
         top: 10px; /* Closer to the top */
         right: 10px; /* Closer to the right edge */
         font-size: 24px; /* Slightly smaller for mobile */
@@ -351,10 +351,10 @@
     /* General font adjustments for better readability */
     .portfolio-info h2,
     .portfolio-info p,
-    .details-link, .details-tic{
+    .details-link, .details-tic, .details-gru{
         font-size: 18px; /* Adjust font size for smaller screens */
     }
-    .details-link,.details-tic {
+    .details-link,.details-tic, .details-gru {
         font-size: 24px;
         text-decoration: none;
         color: #fff;
@@ -379,7 +379,7 @@
         left: 100px;
         right: 100px;
     }
-    .close-button, .close-tic {
+    .close-button, .close-tic, .close-gru {
         top: 10px; /* Closer to the top */
         right: 10px; /* Closer to the right edge */
         font-size: 24px; /* Slightly smaller for mobile */
@@ -390,10 +390,10 @@
     /* General font adjustments for better readability */
     .portfolio-info h2,
     .portfolio-info p,
-    .details-link, .details-tic{
+    .details-link, .details-tic, .details-gru{
         font-size: 18px; /* Adjust font size for smaller screens */
     }
-    .details-link,.details-tic {
+    .details-link,.details-tic, .details-gru {
         font-size: 24px;
         text-decoration: none;
         color: #fff;
